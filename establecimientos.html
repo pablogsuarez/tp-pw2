@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./css/estilos-index.css" />
+    <link rel="stylesheet" href="./css/estilos-establecimientos.css">
+    <script src="./js/filtro-establecimiento.js"></script>
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <!-- TITLE  -->
+    <title>Hogwarts Institute</title>
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="header-icon">
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="#"><i class="fas fa-user-circle"></i></a>
+        <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+    </div>
+
+    <div id="logo-img">
+        <div><img src="img/logo.png" alt="Logo" /></div>
+        <div>Hogwarts Institute</div>
+    </div>
+  </header>
+    <!-- Menu -->
+    <nav id="menu">
+      <ul>
+        <li>
+          <a href="./index.html">HOME</a>
+        </li>
+        <li>
+          <a href="./establecimientos.html">ESTABLECIMIENTOS</a>
+        </li>
+        <li>
+          <a href="./inscripciones.html">INSCRIPCIÓN</a>
+        </li>
+        <li>
+          <a href="./calendario.html">CALENDARIO</a>
+        </li>
+        <li>
+          <a href="./nosotros.html">NOSOTROS</a>
+        </li>
+        <li>
+            <a href="./contacto.html">CONTACTO</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Principal -->
+    <main>
+      <section>
+        <h1 class="titulo-centrado">ESTABLECIMIENTOS</h1>
+        <div class="contenedor-input">
+          <i class="fa fa-search"></i>
+          <input placeholder="Filtrar por provincia (ej Buenos Aires / Córdoba)" id="filtro">
+        </div>
+      </section>
+
+      <section>
+        
+        <article class="contenedor-columnas-establecimientos">
+          <div class="establecimientos-imagen">
+            <img src="./img/img4.jpg" alt="">
+          </div>
+  
+          <div class="establecimientos-descripcion">
+            <h4> Harry Potter Rio Cuarto School(Rio Cuarto)</h4>
+            <p>Dirección: Av. Italia 1589</p>
+            <p>Provincia: <span class="provincia">Córdoba</span></p>
+            <p>Idiomas que se cursan: Francés, Alemán</p>
+            <a href="./establecimiento-1.html"><button class="boton">Ver Más</button></a>
+          </div>
+        </article>
+
+        <article class="contenedor-columnas-establecimientos">
+          <div class="establecimientos-imagen">
+            <img src="./img/img1.jpg" alt="">
+          </div>
+  
+          <div class="establecimientos-descripcion">
+            <h4>San Justo Languages(San Justo)</h4>
+            <p>Dirección: Florencio Varela 1903</p>
+            <p>Provincia: <span class="provincia">Buenos Aires</span></p>
+            <p>Idiomas que se cursan: Inglés, Francés</p>
+            <a href="./establecimiento-1.html"><button class="boton">Ver Más</button></a>
+          </div>
+        </article>
+
+        <article class="contenedor-columnas-establecimientos">
+          <div class="establecimientos-imagen">
+            <img src="./img/img2.jpg" alt="">
+          </div>
+        
+          <div class="establecimientos-descripcion">
+            <h4>Idiomas Ramos(Ramos Mejía)</h4>
+            <p>Dirección: Av. de Mayo 85</p>
+            <p>Provincia: <span class="provincia">Buenos Aires</span></p>
+            <p>Idiomas que se cursan: Chino, Alemán</p>
+            <a href="./establecimiento-2.html"><button class="boton">Ver Más</button></a>
+          </div>
+        </article>
+
+        <article class="contenedor-columnas-establecimientos">
+          <div class="establecimientos-imagen">
+            <img src="./img/img1.jpg" alt="">
+          </div>
+  
+          <div class="establecimientos-descripcion">
+            <h4>Idiomas Carlos Paz(Carlos Paz)</h4>
+            <p>Dirección: Av. Italia 1589</p>
+            <p>Provincia: <span class="provincia">Córdoba</span></p>
+            <p>Idiomas que se cursan: Francés, Alemán</p>
+            <a href="./establecimiento-1.html"><button class="boton">Ver Más</button></a>
+          </div>
+        </article>
+
+        <article class="contenedor-columnas-establecimientos">
+          <div class="establecimientos-imagen">
+            <img src="./img/img2.jpg" alt="">
+          </div>
+  
+          <div class="establecimientos-descripcion">
+            <h4>Catamarca School of Languages(Andalgalá)</h4>
+            <p>Dirección: Av. Fiambalá 321</p>
+            <p>Provincia: <span class="provincia">Catamarca</span></p>
+            <p>Idiomas que se cursan: Chino, Francés, Alemán</p>
+            <a href="./establecimiento-1.html"><button class="boton">Ver Más</button></a>
+          </div>
+        </article>
+
+        <article class="contenedor-columnas-establecimientos">
+          <div class="establecimientos-imagen">
+            <img src="./img/img3.jpg" alt="">
+          </div>
+        
+          <div class="establecimientos-descripcion">
+            <h4>Ciudadela English School(Ciudadela)</h4>
+            <p>Provincia: <span class="provincia">Buenos Aires</span></p>
+            <p>Idiomas que se cursan: Inglés, Chino</p>
+            <a href="./establecimiento-3.html"><button class="boton">Ver Más</button></a>
+          </div>
+        </article>
+
+        <article class="contenedor-columnas-establecimientos">
+          <div class="establecimientos-imagen">
+            <img src="./img/img4.jpg" alt="">
+          </div>
+        
+          <div class="establecimientos-descripcion">
+            <h4>Morón International School(Morón)</h4>
+            <p>Dirección: Domingo French 854</p>
+            <p>Provincia: <span class="provincia">Buenos Aires</span></p>
+            <p>Idiomas que se cursan: Alemán, Chino</p>
+            <a href="./establecimiento-4.html"><button class="boton">Ver Más</button></a>
+          </div>
+        </article>
+    
+        <article class="contenedor-columnas-establecimientos">
+          <div class="establecimientos-imagen">
+            <img src="./img/img2.jpg" alt="">
+          </div>
+        
+          <div class="establecimientos-descripcion">
+            <h4>Alta Gracia Languages(Alta Gracia)</h4>
+            <p>Dirección: Av. Córdoba 4718</p>
+            <p>Provincia: <span class="provincia">Córdoba</span></p>
+            <p>Idiomas que se cursan: Inglés, Chino, Francés, Alemán</p>
+            <a href="./establecimiento-2.html"><button class="boton">Ver Más</button></a>
+          </div>
+        </article>
+        
+        <article id="sin-resultados">
+          <p>No se encontraron resultados para esa provincia</p>
+        </article>
+
+      </section>
+    </main>
+
+     <!-- Pie -->
+    <footer class="contenedor-columnas fondo-oscuro1">
+      <div class="tres-columnas">
+          <h3>Grupo 7</h3>
+          <p>Albornoz, Hernan</p>
+          <p>Soto, Ezequiel</p>
+          <p>Suárez, Pablo</p>
+          <p>Tarifa, Gabriel</p>
+      </div>
+      <div class="tres-columnas">
+          <h3>Menu Inferior</h3>
+          <a href="./establecimientos.html">Establecimientos</a>
+          <a href="./inscripciones.html">Inscripcion</a>
+          <a href="./calendario.html">Calendario</a>
+          <a href="./contacto.html">Contacto</a>
+      </div>
+      <div class="tres-columnas">
+          <h3>Redes Sociales</h3>
+          <div class="red-social">
+              <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          </div>
+  </footer>
+</body>
+
+</html>

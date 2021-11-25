@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./css/estilos-index.css" />
+    <link rel="stylesheet" href="./css/estilos-calendario.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/filtroCursos.js"></script>
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <!-- TITLE  -->
+    <title>Hogwarts Institute</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-icon">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-user-circle"></i></a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+
+        <div id="logo-img">
+            <div><img src="img/logo.png" alt="Logo" /></div>
+            <div>Hogwarts Institute</div>
+        </div>
+    </header>
+    <!-- Menu -->
+    <nav id="menu">
+        <ul>
+          <li>
+            <a href="./index.html">HOME</a>
+          </li>
+          <li>
+            <a href="./establecimientos.html">ESTABLECIMIENTOS</a>
+          </li>
+          <li>
+            <a href="./inscripciones.html">INSCRIPCIÓN</a>
+          </li>
+          <li>
+            <a href="./calendario.html">CALENDARIO</a>
+          </li>
+          <li>
+            <a href="./nosotros.html">NOSOTROS</a>
+          </li>
+          <li>
+              <a href="./contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+    </nav>
+
+    <!-- Principal -->
+    <main>
+
+        <h2 class="titulo-centrado">CALENDARIO DE CURSOS</h2>
+
+        <section class="filtros">
+            <span>Filtrar por:&nbsp;&nbsp</span>
+
+            <select name="establecimiento" class="select-filtros" id="establecimiento">
+                <option value="cuatro-columnas-calendario" selected>Sede - TODAS</option>
+                <option disabled>Buenos Aires</option>
+                <option value="sanjusto">San Justo</option>
+                <option value="ramos">Ramos Mejía</option>
+                <option value="ciudadela">Ciudadela</option>
+                <option value="moron">Morón</option>
+                <option disabled>Córdoba</option>
+                <option value="riocuarto">Rio Cuarto</option>
+                <option value="carlospaz">Carlos Paz</option>
+                <option value="altagracia">Alta Gracia</option>
+            </select>
+
+            <select name="idioma" class="select-filtros" id="idioma">
+                <option value="cuatro-columnas-calendario" selected>Idioma - TODOS</option>
+                <option value="ingles">Inglés</option>
+                <option value="frances">Francés</option>
+                <option value="aleman">Alemán</option>
+                <option value="chino">Chino</option>
+            </select>
+
+        </section>
+
+        <section class="fondo-calendario">
+            <h2 class="titulo-centrado">OCTUBRE 2021</h2>
+
+            <article class="contenedor-calendario">
+                
+                <div class="cuatro-columnas-calendario ingles ramos">
+                    <img src="./img/ingles.png" alt="Curso Inglés">
+                </div>
+                <div class="cuatro-columnas-calendario ingles ramos">
+                    <h3>Inglés - Nivel 1</h3>
+                    <p>Modalidad: A distancia</p>
+                    <p>Horarios: Turno Tarde</p>
+                    <p>Fecha Inicio: 4/10</p>
+                    <p>Sede: Ramos Mejía</p>
+                    <h4>Precio: $10.000</h4>
+                    <a href="./inscripciones.html" class="boton">Inscribite</a>
+                </div>
+
+                <div class="cuatro-columnas-calendario aleman altagracia">
+                    <img src="./img/aleman.png" alt="Curso Alemán">
+                </div>
+                <div class="cuatro-columnas-calendario aleman altagracia">
+                    <h3>Alemán - Nivel 3</h3>
+                    <p>Modalidad: A distancia</p>
+                    <p>Horarios: Turno Tarde</p>
+                    <p>Fecha Inicio: 10/10</p>
+                    <p>Sede: Alta Gracia</p>
+                    <h4>Precio: $14.000</h4>
+                    <a href="./inscripciones.html" class="boton">Inscribite</a>
+                </div>
+
+                <div class="cuatro-columnas-calendario frances sanjusto">
+                    <img src="./img/frances.png" alt="Curso Francés">
+                </div>
+
+                <div class="cuatro-columnas-calendario frances sanjusto">
+                    <h3>Francés - Nivel 4</h3>
+                    <p>Modalidad: Presencial</p>
+                    <p>Horarios: Turno Noche</p>
+                    <p>Fecha Inicio: 13/10</p>
+                    <p>Sede: San Justo</p>
+                    <h4>Precio: $8.000</h4>
+                    <a href="./inscripciones.html" class="boton">Inscribite</a>
+                </div>
+
+                <div class="cuatro-columnas-calendario ingles moron">
+                    <img src="./img/ingles.png" alt="Curso Inglés">
+                </div>
+                <div class="cuatro-columnas-calendario ingles moron">
+                    <h3>Inglés - Nivel 2</h3>
+                    <p>Modalidad: Presencial</p>
+                    <p>Horarios: Turno Mañana</p>
+                    <p>Fecha Inicio: 29/10</p>
+                    <p>Sede: Morón</p>
+                    <h4>Precio: $12.000</h4>
+                    <a href="./inscripciones.html" class="boton">Inscribite</a>
+                </div>
+
+                <div class="cuatro-columnas-calendario chino sanjusto">
+                    <img src="./img/chino.png" alt="Curso Chino">
+                </div>
+                <div class="cuatro-columnas-calendario chino sanjusto">
+                    <h3>Chino - Nivel 1</h3>
+                    <p>Modalidad: A distancia</p>
+                    <p>Horarios: Turno Noche</p>
+                    <p>Fecha Inicio: 7/10</p>
+                    <p>Sede: San Justo</p>
+                    <h4>Precio: $7.000</h4>
+                    <a href="./inscripciones.html" class="boton">Inscribite</a>
+                </div>
+
+                <div class="cuatro-columnas-calendario frances riocuarto">
+                    <img src="./img/frances.png" alt="Curso Francés">
+                </div>
+
+                <div class="cuatro-columnas-calendario frances riocuarto">
+                    <h3>Francés - Nivel 1</h3>
+                    <p>Modalidad: Presencial</p>
+                    <p>Horarios: Turno Noche</p>
+                    <p>Fecha Inicio: 30/10</p>
+                    <p>Sede: Rio Cuarto</p>
+                    <h4>Precio: $10.000</h4>
+                    <a href="./inscripciones.html" class="boton">Inscribite</a>
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="fondo-calendario">
+            <h2 class="titulo-centrado">NOVIEMBRE 2021</h2>
+
+            <article class="contenedor-calendario">
+                <div class="cuatro-columnas-calendario aleman ciudadela">
+                    <img src="./img/aleman.png" alt="Curso Alemán">
+                </div>
+                <div class="cuatro-columnas-calendario aleman ciudadela">
+                    <h3>Alemán - Nivel 3</h3>
+                    <p>Modalidad: A distancia</p>
+                    <p>Horarios: Turno Mañana</p>
+                    <p>Fecha Inicio: 11/11</p>
+                    <p>Sede: Ciudadela</p>
+                    <h4>Precio: $12.000</h4>
+                    <a href="./inscripciones.html" class="boton">Inscribite</a>
+                </div>
+
+                <div class="cuatro-columnas-calendario ingles ramos">
+                    <img src="./img/ingles.png" alt="Curso Inglés">
+                </div>
+                <div class="cuatro-columnas-calendario ingles ramos">
+                    <h3>Inglés - Nivel 2</h3>
+                    <p>Modalidad: Presencial</p>
+                    <p>Horarios: Turno Tarde</p>
+                    <p>Fecha Inicio: 15/11</p>
+                    <p>Sede: Ramos Mejía</p>
+                    <h4>Precio: $15.000</h4>
+                    <a href="./inscripciones.html" class="boton">Inscribite</a>
+                </div>
+
+                <div class="cuatro-columnas-calendario chino ciudadela">
+                    <img src="./img/chino.png" alt="Curso Chino">
+                </div>
+                <div class="cuatro-columnas-calendario chino ciudadela">
+                    <h3>Chino - Nivel 4</h3>
+                    <p>Modalidad: Presencial</p>
+                    <p>Horarios: Turno Noche</p>
+                    <p>Fecha Inicio: 29/11</p>
+                    <p>Sede: Ciudadela</p>
+                    <h4>Precio: $17.000</h4>
+                    <a href="./inscripciones.html" class="boton">Inscribite</a>
+                </div>
+
+                <div class="cuatro-columnas-calendario frances moron">
+                    <img src="./img/frances.png" alt="Curso Francés">
+                </div>
+                <div class="cuatro-columnas-calendario frances moron">
+                    <h3>Francés - Nivel 1</h3>
+                    <p>Modalidad: A distancia</p>
+                    <p>Horarios: Turno Noche</p>
+                    <p>Fecha Inicio: 16/11</p>
+                    <p>Sede: Morón</p>
+                    <h4>Precio: $12.000</h4>
+                    <a href="./inscripciones.html" class="boton">Inscribite</a>
+                </div>
+
+                <div class="cuatro-columnas-calendario ingles carlospaz">
+                    <img src="./img/ingles.png" alt="Curso Inglés">
+                </div>
+                <div class="cuatro-columnas-calendario ingles carlospaz">
+                    <h3>Inglés - Nivel 4</h3>
+                    <p>Modalidad: Presencial</p>
+                    <p>Horarios: Turno Tarde</p>
+                    <p>Fecha Inicio: 25/11</p>
+                    <p>Sede: Carlos Paz</p>
+                    <h4>Precio: $12.000</h4>
+                    <a href="./inscripciones.html" class="boton">Inscribite</a>
+                </div>
+
+                <div class="cuatro-columnas-calendario aleman riocuarto">
+                    <img src="./img/aleman.png" alt="Curso Alemán">
+                </div>
+                <div class="cuatro-columnas-calendario aleman riocuarto">
+                    <h3>Alemán - Nivel 1</h3>
+                    <p>Modalidad: Presencial</p>
+                    <p>Horarios: Turno Tarde</p>
+                    <p>Fecha Inicio: 28/11</p>
+                    <p>Sede: Rio Cuarto</p>
+                    <h4>Precio: $15.000</h4>
+                    <a href="./inscripciones.html" class="boton">Inscribite</a>
+                </div>
+
+            </article>
+        </section>
+
+    <!-- Pie -->
+    <footer class="contenedor-columnas fondo-oscuro1">
+        <div class="tres-columnas">
+            <h3>Grupo 7</h3>
+            <p>Albornoz, Hernan</p>
+            <p>Soto, Ezequiel</p>
+            <p>Suárez, Pablo</p>
+            <p>Tarifa, Gabriel</p>
+        </div>
+        <div class="tres-columnas">
+            <h3>Menu Inferior</h3>
+            <a href="./establecimientos.html">Establecimientos</a>
+            <a href="./inscripciones.html">Inscripcion</a>
+            <a href="./calendario.html">Calendario</a>
+            <a href="./contacto.html">Contacto</a>
+        </div>
+        <div class="tres-columnas">
+            <h3>Redes Sociales</h3>
+            <div class="red-social">
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+    </footer>
+</body>
+
+</html>

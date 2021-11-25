@@ -1,0 +1,55 @@
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: center;
+}
+
+.contenedor-calendario {
+  text-align: center;
+}
+
+.select-filtros {
+  height: 30px;
+  background-color: var(--fondo);
+  border-radius: 5px;
+  border: 0px;
+}
+
+.fondo-calendario {
+  background-color: var(--claro2);
+  border-radius: 1.5em;
+  padding: 1em;
+  margin: 1em 1em;
+}
+
+.cuatro-columnas {
+  text-align: center;
+}
+
+
+@media screen and (min-width:47em){
+
+  .contenedor-calendario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 5%;
+  }
+
+  .cuatro-columnas-calendario {
+    width: calc((100% / 2));
+    align-self: center;
+  }
+ 
+}
+
+/* Estilos PC Escritorio 60em > 960px */
+@media screen and (min-width:60em){
+
+  .cuatro-columnas-calendario {
+    width: calc((100% / 4));
+    text-align: left;
+  }
+
+} 

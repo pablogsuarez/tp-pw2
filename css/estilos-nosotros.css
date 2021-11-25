@@ -1,0 +1,51 @@
+.institucional .profesor-descripcion {
+    width: 20em;
+}
+
+.profesores {
+    font-size: 8em;
+    padding: .2em 0;
+}
+
+.profesor-nombre {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+.profesor-descripcion {
+    background-color: var(--claro1);
+    border-radius: 10px;
+    max-width: 15em;
+    margin: auto;
+}
+
+.contenedor-nosotros {
+    padding: 1em;
+    text-align: center;
+}
+
+.texto-dos-columnas p {
+    text-align: justify;
+    box-sizing: border-box;
+    width: 95%;
+    margin: auto;
+}
+
+/* Estilos Tablet 47em > 752px */
+@media screen and (min-width:47em){
+
+    .contenedor-nosotros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin: auto;
+        width: 80%;
+      }
+
+    .texto-dos-columnas {
+      width: calc(45%);
+    }
+
+}

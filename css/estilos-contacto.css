@@ -1,0 +1,208 @@
+#contenedor-contacto {
+  padding-top: 2em;
+}
+
+#errores {
+  padding: .2em 0;
+  text-align: left;
+  color: red;
+}
+
+.titulo-a-la-izquierda {
+  text-align: center;
+  padding: .5em 0;
+}
+
+.contenedor-contacto {
+  padding: 1em;
+  text-align: center;
+}
+
+.columna-contacto p {
+  text-align: center;
+  box-sizing: border-box;
+  width: 95%;
+  margin: auto;
+  padding-bottom: 1em;
+}
+
+.contenedor-buscar {
+  display: none;
+}
+
+#iconos {
+  font-size: 30px;
+}
+
+#iconos a {
+  margin-left: 10px;
+  color: var(--oscuro1);
+}
+
+#iconos a:hover {
+  color: var(--oscuro2);
+}
+
+#mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+iframe {
+  width: 90%;
+  height: 22em;
+  margin: 2em 0;
+}
+
+textarea {
+  border: none;
+  resize: none;
+}
+
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: var(--oscuro1);
+  padding: 1em;
+  margin: 1em auto;
+  border-radius: 4px;
+  color: var(--fondo);
+  box-shadow: 5px 13px 37px #000;
+  max-width: 35em;
+}
+
+.formulario h4 {
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+.controls {
+  width: 100%;
+  background: var(--oscuro2);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid --claro2;
+  font-size: 18px;
+  color: var(--fondo);
+}
+
+.botons {
+  float: right;
+  width: 30%;
+  background: var(--alernativo1);
+  border: none;
+  color: var(--fondo);
+  font-size: 1em;
+}
+
+.botons:hover {
+  background: var(--alternativo2);
+}
+
+ /* Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+/* Estilos Tablet 47em > 752px */
+@media screen and (min-width:47em){
+
+  header {
+    flex-wrap: nowrap;
+  }
+
+  .contenedor-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: auto;
+    width: 95%;
+  }
+  
+  #iconos {
+    text-align: left;
+  }
+
+  .columna-contacto p {
+    text-align: left;
+    margin: 0;
+  }
+  
+  .columna-contacto {
+    width: calc(50% - 3em);
+  }
+
+  .titulo-a-la-izquierda {
+    text-align: left;
+  }
+ 
+  .contenedor-buscar { 
+    display: block;
+    width: 100%;
+    position: relative; 
+    margin: 0 auto ;
+    text-align: center;
+  }
+  
+  .contenedor-buscar #buscar { 
+    width: 50%;
+    line-height: 2em;
+    border: 1px var(--oscuro1) solid;
+    border-radius: .5em;
+    text-indent: 2em;
+    font-family:  FontAwesome, sans-serif;
+  }
+  
+  .contenedor-buscar .fa-search { 
+    position: relative;
+    left: 50%;
+    font-size: 1.2em;
+    color: black;
+  }
+  
+  #buscar::placeholder, #buscar {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.1em;
+    color: #000;
+  }
+  
+}

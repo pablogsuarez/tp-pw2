@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./css/estilos-index.css" />
+    <link rel="stylesheet" href="./css/estilos-inscripciones.css" />
+    <!-- FONT AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+
+    <!-- JS  -->
+        <script src="./js/inscripciones.js"></script>
+    <title>Inscripciones</title>
+  </head>
+
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <div class="header-icon">
+          <a href="#"><i class="fas fa-search"></i></a>
+          <a href="#"><i class="fas fa-user-circle"></i></a>
+          <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+      </div>
+
+      <div id="logo-img">
+          <div><img src="img/logo.png" alt="Logo" /></div>
+          <div>Hogwarts Institute</div>
+      </div>
+    </header>
+    <!-- Menu -->
+    <nav id="menu">
+      <ul>
+        <li>
+          <a href="./index.html">HOME</a>
+        </li>
+        <li>
+          <a href="./establecimientos.html">ESTABLECIMIENTOS</a>
+        </li>
+        <li>
+          <a href="./inscripciones.html">INSCRIPCIÓN</a>
+        </li>
+        <li>
+          <a href="./calendario.html">CALENDARIO</a>
+        </li>
+        <li>
+          <a href="./nosotros.html">NOSOTROS</a>
+        </li>
+        <li>
+            <a href="./contacto.html">CONTACTO</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section>
+      <h2 class="titulo-centrado">INSCRIPCIONES</h2>
+      <div class="titulo-centrado">
+        <p>
+          Inscripción al curso de <span id="idiomaCurso"></span> en <span id="establecimientoCurso"></span> en <span id="horarioCurso"></span>.
+        </p>
+        <p>El curso inicia el día <span id="fechaCurso"></span></p>
+        <p>El precio es de $<span id="precioCurso"></span></p>
+      </div>
+    </section>
+    <!-- FORMULARIO  -->
+    <section>
+      <form action="" method="" id="form" class="formulario">
+          <h4 class="titulo-centrado">Rellena el formulario para inscribirte</h4>
+      <label for="nombres">Nombre:</label>
+      <input
+        class="controls"
+        type="text"
+        name="nombres"
+        id="nombre"
+        placeholder="Ej: Juan"
+       
+      />
+     <label for="apellidos">Apellido:</label>
+      <input
+        class="controls"
+        type="text"
+        name="apellidos"
+        id="apellido"
+        placeholder="Ej: Perez"
+      
+      />
+      <label for="emails">Email:</label>
+      <input
+        class="controls"
+        type="email"
+        name="emails"
+        id="email"
+        placeholder="ejemplo@dominio.com"
+     
+      />
+      <label for="telefonos">Telefono:</label>
+      <input
+        class="controls"
+        type="tel"
+        name="telefonos"
+        id="telefono"
+        placeholder="Ingresa tu telefono"
+      />
+      <label for="provincia">Provincia:</label>
+      <select name="provincia" id="provincia" class="controls">
+        <option value="0" selected>Selecciona una provincia</option>
+        <option value="1">Bs. As.</option>
+        <option value="2">Catamarca</option>
+        <option value="3">Chaco</option>
+        <option value="4">Chubut</option>
+        <option value="5">Cordoba</option>
+        <option value="6">Corrientes</option>
+        <option value="7">Entre Rios</option>
+        <option value="8">Formosa</option>
+        <option value="9">Jujuy</option>
+        <option value="10">La Pampa</option>
+        <option value="11">La Rioja</option>
+        <option value="12">Mendoza</option>
+        <option value="13">Misiones</option>
+        <option value="14">Neuquen</option>
+        <option value="15">Rio Negro</option>
+        <option value="16">Salta</option>
+        <option value="17">San Juan</option>
+        <option value="18">San Luis</option>
+        <option value="19">Santa Cruz</option>
+        <option value="20">Santa Fe</option>
+        <option value="21">Sgo. del Estero</option>
+        <option value="23">Tucuman</option>
+      </select>
+      <label for="ciudades">Ciudad:</label>
+      <input
+        class="controls"
+        type="text"
+        name="ciudades"
+        id="ciudad"
+        placeholder="Ej: Villa Luzuriaga"
+      />
+      <input class="botons" type="submit" value="Enviar" id="inscribite" />
+      <div id="mensaje" class="error"></div>
+    </form>
+
+    </section>
+    <!-- Pie -->
+    <footer class="contenedor-columnas fondo-oscuro1">
+      <div class="tres-columnas">
+          <h3>Grupo 7</h3>
+          <p>Albornoz, Hernan</p>
+          <p>Soto, Ezequiel</p>
+          <p>Suárez, Pablo</p>
+          <p>Tarifa, Gabriel</p>
+      </div>
+      <div class="tres-columnas">
+          <h3>Menu Inferior</h3>
+          <a href="./establecimientos.html">Establecimientos</a>
+          <a href="./inscripciones.html">Inscripcion</a>
+          <a href="./calendario.html">Calendario</a>
+          <a href="./contacto.html">Contacto</a>
+      </div>
+      <div class="tres-columnas">
+          <h3>Redes Sociales</h3>
+          <div class="red-social">
+              <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          </div>
+    </footer>
+  </body>
+</html>
